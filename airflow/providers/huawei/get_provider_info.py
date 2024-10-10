@@ -32,49 +32,9 @@ def get_provider_info():
             "apache-airflow>=2.2.0",
             "huaweicloudsdkcore>=3.1.21",
             "esdk-obs-python>=3.22.2",
-            "huaweicloudsdkdws>=3.1.21",
-            "huaweicloudsdksmn>=3.1.19",
-            "huaweicloudsdkdli==3.1.19",
-            "huaweicloudsdkcdm>=3.1.19",
-            "huaweicloudsdkdlf>=3.1.19",
-            "huaweicloudsdkiam>=3.1.19",
+            "huaweicloudsdkiam>=3.1.19"
         ],
         "integrations": [
-            {
-                "integration-name": "Huawei Cloud CDM",
-                "external-doc-url": "https://support.huaweicloud.com/intl/en-us/cdm/index.html",
-                "logo": "/integration-logos/huawei/CDM.png",
-                "how-to-guide": ["/docs/apache-airflow-providers-huawei/operators/cdm.rst"],
-                "tags": ["huawei"],
-            },
-            {
-                "integration-name": "Huawei Cloud DataArts",
-                "external-doc-url": "https://support.huaweicloud.com/intl/en-us/dataartsstudio/index.html",
-                "logo": "/integration-logos/huawei/DataArts.png",
-                "how-to-guide": ["/docs/apache-airflow-providers-huawei/operators/dataarts.rst"],
-                "tags": ["huawei"],
-            },
-            {
-                "integration-name": "Huawei Cloud DLI",
-                "external-doc-url": "https://support.huaweicloud.com/intl/en-us/dli/index.html",
-                "logo": "/integration-logos/huawei/DLI.png",
-                "how-to-guide": ["/docs/apache-airflow-providers-huawei/operators/dli.rst"],
-                "tags": ["huawei"],
-            },
-            {
-                "integration-name": "Huawei Cloud DWS",
-                "external-doc-url": "https://support.huaweicloud.com/intl/en-us/dws/index.html",
-                "logo": "/integration-logos/huawei/DWS.png",
-                "how-to-guide": ["/docs/apache-airflow-providers-huawei/operators/dws.rst"],
-                "tags": ["huawei"],
-            },
-            {
-                "integration-name": "Huawei Cloud SMN",
-                "external-doc-url": "https://support.huaweicloud.com/intl/en-us/smn/index.html",
-                "logo": "/integration-logos/huawei/SMN.png",
-                "how-to-guide": ["/docs/apache-airflow-providers-huawei/operators/smn.rst"],
-                "tags": ["huawei"],
-            },
             {
                 "integration-name": "Huawei Cloud OBS",
                 "external-doc-url": "https://support.huaweicloud.com/intl/en-us/obs/index.html",
@@ -87,49 +47,14 @@ def get_provider_info():
             {
                 "integration-name": "Huawei Cloud OBS",
                 "python-modules": ["airflow.providers.huawei.cloud.operators.huawei_obs"],
-            },
-            {
-                "integration-name": "Huawei Cloud DWS",
-                "python-modules": ["airflow.providers.huawei.cloud.operators.dws"],
-            },
-            {
-                "integration-name": "Huawei Cloud SMN",
-                "python-modules": ["airflow.providers.huawei.cloud.operators.smn"],
-            },
-            {
-                "integration-name": "Huawei Cloud DLI",
-                "python-modules": ["airflow.providers.huawei.cloud.operators.dli"],
-            },
-            {
-                "integration-name": "Huawei Cloud CDM",
-                "python-modules": ["airflow.providers.huawei.cloud.operators.cdm"],
-            },
-            {
-                "integration-name": "Huawei Cloud DataArts",
-                "python-modules": ["airflow.providers.huawei.cloud.operators.dataarts"],
-            },
+            }
         ],
         "sensors": [
             {
                 "integration-name": "Huawei Cloud OBS",
                 "python-modules": ["airflow.providers.huawei.cloud.sensors.huawei_obs_key"],
-            },
-            {
-                "integration-name": "Huawei Cloud DWS",
-                "python-modules": ["airflow.providers.huawei.cloud.sensors.dws"],
-            },
-            {
-                "integration-name": "Huawei Cloud DLI",
-                "python-modules": ["airflow.providers.huawei.cloud.sensors.dli"],
-            },
-            {
-                "integration-name": "Huawei Cloud CDM",
-                "python-modules": ["airflow.providers.huawei.cloud.sensors.cdm"],
-            },
-            {
-                "integration-name": "Huawei Cloud DataArts",
-                "python-modules": ["airflow.providers.huawei.cloud.sensors.dataarts"],
-            },
+            }
+
         ],
         "hooks": [
             {
@@ -139,40 +64,12 @@ def get_provider_info():
             {
                 "integration-name": "Huawei Cloud OBS",
                 "python-modules": ["airflow.providers.huawei.cloud.hooks.huawei_obs"],
-            },
-            {
-                "integration-name": "Huawei Cloud DWS",
-                "python-modules": ["airflow.providers.huawei.cloud.hooks.dws"],
-            },
-            {
-                "integration-name": "Huawei Cloud DWS SQL",
-                "python-modules": ["airflow.providers.huawei.cloud.hooks.dws_sql"],
-            },
-            {
-                "integration-name": "Huawei Cloud SMN",
-                "python-modules": ["airflow.providers.huawei.cloud.hooks.smn"],
-            },
-            {
-                "integration-name": "Huawei Cloud DLI",
-                "python-modules": ["airflow.providers.huawei.cloud.hooks.dli"],
-            },
-            {
-                "integration-name": "Huawei Cloud CDM",
-                "python-modules": ["airflow.providers.huawei.cloud.hooks.cdm"],
-            },
-            {
-                "integration-name": "Huawei Cloud DataArts",
-                "python-modules": ["airflow.providers.huawei.cloud.hooks.dataarts"],
-            },
+            }
         ],
         "connection-types": [
             {
                 "hook-class-name": "airflow.providers.huawei.cloud.hooks.base_huawei_cloud.HuaweiBaseHook",
                 "connection-type": "huaweicloud",
-            },
-            {
-                "hook-class-name": "airflow.providers.huawei.cloud.hooks.dws_sql.DWSSqlHook",
-                "connection-type": "dws",
-            },
+            }
         ],
     }
