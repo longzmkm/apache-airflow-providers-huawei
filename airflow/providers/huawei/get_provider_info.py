@@ -30,7 +30,6 @@ def get_provider_info():
         "versions": ["1.0.2", "1.0.1", "1.0.0"],
         "dependencies": [
             "apache-airflow>=2.2.0",
-            "psycopg2>=2.9.4",
             "huaweicloudsdkcore>=3.1.21",
             "esdk-obs-python>=3.22.2",
             "huaweicloudsdkdws>=3.1.21",
