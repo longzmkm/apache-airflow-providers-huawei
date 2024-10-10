@@ -50,7 +50,7 @@ Requirements
 ======================  ==================
 PIP package             Version required
 ======================  ==================
-``apache-airflow``      ``>=2.5.0``
+``apache-airflow``      ``>=2.2.0``
 ``psycopg2``            ``>=2.9.4``
 ``huaweicloudsdkcore``  ``>=3.1.21``
 ``esdk-obs-python``     ``>=3.22.2``
